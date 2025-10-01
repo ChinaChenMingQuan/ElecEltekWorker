@@ -1,7 +1,6 @@
 "use strict";
 (function () {
     var checker = (function () {
-        var isBlazorPages = typeof Blazor === "object" && Blazor != null;
         var isSupportConsole = typeof console === "object" && console != null;
         var isSupportConsoleLog = isSupportConsole && typeof console.log === "function";
         var isSupportDocument = typeof document === "object" && console != null;
@@ -31,7 +30,6 @@
             return typeof element.appendChild === "function";
         })();
         return {
-            isBlazorPages,
             isSupportConsole,
             isSupportConsoleLog,
             isSupportDocument,
@@ -76,7 +74,8 @@
     var relocatorScript = document.createElement("script");
     relocatorScript.src = "relocator.js";
     document.body.appendChild(relocatorScript);
-    if (checker.isBlazorPages) {
+    var isBlazorPages = typeof Blazor === "object" && Blazor != null;
+    if (isBlazorPages) {
         var mainScript = document.createElement("script");
         mainScript.src = "main.js";
         mainScript.type = "module";

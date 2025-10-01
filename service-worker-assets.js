@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "dZJVWboe",
+  "version": "yM86kES0",
   "assets": [
     {
       "hash": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
@@ -310,11 +310,11 @@ self.assetsManifest = {
       "url": "index.html"
     },
     {
-      "hash": "sha256-Tjy7m3YwJIPeGeid5eoexPFUAtlUlG7hseTxN5BsXm8=",
+      "hash": "sha256-kx5CfQKGSYCQq+zWNfpAwgv6DEiDPT9YCWfeLnWwmaA=",
       "url": "launcher.js"
     },
     {
-      "hash": "sha256-ey9Xt3PANFJD2sOGG+K5mtNJKJq+gAjytlwLGsfTk84=",
+      "hash": "sha256-zppiDU/6wEeGYVSnQ4DOYMZAfS7z0Om74VzHeqS8gr0=",
       "url": "launcher.js.map"
     },
     {
