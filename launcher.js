@@ -67,7 +67,7 @@
     })();
     for (var isSupported in checker) {
         if (!(checker[isSupported])) {
-            printer.write("当前环境不支持最新特征!");
+            printer.write(isSupported + "当前环境不支持最新特征!");
             return;
         }
     }
